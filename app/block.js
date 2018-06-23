@@ -11,6 +11,14 @@ class Block {
     this.nonce = nonce;
     this.hash = hash;
   }
+
+  static genesis() {
+    return new this(GENESIS_DATA);
+  }
+
+  
+
+  
 }
 
 export default Block;
