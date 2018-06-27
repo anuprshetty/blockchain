@@ -16,9 +16,19 @@ class Block {
     return new this(GENESIS_DATA);
   }
 
-  
+  static adjustDifficulty({ timestamp, originalBlock }) {
+    const prevDifficulty = originalBlock.difficulty;
+    if (prevDifficulty < 1) {
+      return 1;
+    }
 
-  
+    const currentMineRate = timestamp - originalBlock.timestamp;
+    if (currentMineRate > MINE_RATE) {
+      return prevDifficulty - 1;
+    } else {
+      return prevDifficulty + 1;
+    }
+  }
 }
 
 export default Block;
