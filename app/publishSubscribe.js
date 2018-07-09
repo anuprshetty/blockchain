@@ -7,6 +7,13 @@ const CHANNELS = {
 class PubSub {
   constructor({ blockchain }) {
     this.blockchain = blockchain;
+
+    this.publisher = redis.createClient({
+      url: `redis://${process.env.REDIS_SERVER_HOST}:${process.env.REDIS_SERVER_PORT}`,
+    });
+    this.subscriber = redis.createClient({
+      url: `redis://${process.env.REDIS_SERVER_HOST}:${process.env.REDIS_SERVER_PORT}`,
+    });
   }
 }
 
