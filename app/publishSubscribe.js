@@ -40,6 +40,13 @@ class PubSub {
   publish({ channel, message }) {
     this.publisher.publish(channel, message);
   }
+
+  broadcastChain() {
+    this.publish({
+      channel: CHANNELS.BLOCKCHAIN,
+      message: JSON.stringify(this.blockchain.chain),
+    });
+  }
 }
 
 export default PubSub;
