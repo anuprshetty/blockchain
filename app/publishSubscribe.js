@@ -36,6 +36,10 @@ class PubSub {
       this.blockchain.replaceChain(chain);
     }
   }
+
+  publish({ channel, message }) {
+    this.publisher.publish(channel, message);
+  }
 }
 
 export default PubSub;
