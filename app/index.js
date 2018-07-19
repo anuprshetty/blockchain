@@ -13,6 +13,10 @@ const pubsub = new PubSub({ blockchain });
 
 app.use(bodyParser.json());
 
+app.get("/api/chain/", (req, res) => {
+  res.json(pubsub.blockchain.chain);
+});
+
 app.listen(process.env.APP_PORT, () => {
   console.log(`Listening on PORT:${process.env.APP_PORT}\n`);
   syncChain();
