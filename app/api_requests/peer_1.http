@@ -1,0 +1,10 @@
+GET http://localhost:3001/api/chain/ HTTP/1.1
+
+###
+
+POST http://localhost:3001/api/mine_block/ HTTP/1.1
+content-type: application/json
+
+{
+    "data": "peer_1_block_n"
+}
