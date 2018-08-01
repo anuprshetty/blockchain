@@ -29,6 +29,18 @@
         "app->prerequisites->npm_cleanup",
         "app->prerequisites->npm_install"
       ]
+    },
+    {
+      "label": "app->run->main_node",
+      "command": "npm run dev-main-node"
+    },
+    {
+      "label": "app->run->peer_1",
+      "command": "npm run dev-peer-1"
+    },
+    {
+      "label": "app->run->peer_2",
+      "command": "npm run dev-peer-2"
     }
   ]
 }
