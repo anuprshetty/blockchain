@@ -5,9 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev-main-node": "APP_PORT=3000 node --watch --inspect=127.0.0.1:9229 index.js",
-    "dev-peer-1": "APP_PORT=3001 node --watch --inspect=127.0.0.1:9229 index.js",
-    "dev-peer-2": "APP_PORT=3002 node --watch --inspect=127.0.0.1:9229 index.js"
+    "dev-main-node": "APP_PORT=3000 node --watch index.js",
+    "dev-peer-1": "APP_PORT=3001 node --watch index.js",
+    "dev-peer-2": "APP_PORT=3002 node --watch index.js"
   },
   "keywords": [],
   "author": "Anup Shetty",
