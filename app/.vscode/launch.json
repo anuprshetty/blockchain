@@ -1,0 +1,28 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "blockchain->debug->peer_node",
+      "program": "${workspaceFolder}/index.js",
+      "args": ["--watch"],
+      "env": {
+        "APP_PORT": "${input:app_port}"
+      }
+      // "console": "integratedTerminal", // Uncomment this if you want to pass ctrl+C (SIGINT) to the debugee process.
+    }
+  ],
+  "inputs": [
+    {
+      "id": "app_port",
+      "type": "pickString",
+      "description": "Select <app_port>",
+      "options": ["3000", "3001", "3002"],
+      "default": "3000"
+    }
+  ]
+}
