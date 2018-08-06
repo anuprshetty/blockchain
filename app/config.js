@@ -1,5 +1,5 @@
 const MINE_RATE = 1000; // in milliseconds
-const INITIAL_DIFFICULTY = 10;
+const INITIAL_DIFFICULTY = 18;
 const GENESIS_DATA = {
   timestamp: 1,
   data: ["block_genesis"],
