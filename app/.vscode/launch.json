@@ -7,7 +7,7 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "blockchain->debug->peer_node",
+      "name": "node_${input:app_port}",
       "program": "${workspaceFolder}/index.js",
       "args": ["--watch"],
       "env": {
