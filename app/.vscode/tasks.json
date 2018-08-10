@@ -41,6 +41,10 @@
     {
       "label": "app->run->peer_2",
       "command": "npm run dev-peer-2"
+    },
+    {
+      "label": "app->average_mine_rate",
+      "command": "node averageMineRate.js"
     }
   ]
 }
