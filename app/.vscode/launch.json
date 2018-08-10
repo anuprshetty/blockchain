@@ -14,6 +14,12 @@
         "APP_PORT": "${input:app_port}"
       }
       // "console": "integratedTerminal", // Uncomment this if you want to pass ctrl+C (SIGINT) to the debugee process.
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "averageMineRate",
+      "program": "${workspaceFolder}/averageMineRate.js"
     }
   ],
   "inputs": [
